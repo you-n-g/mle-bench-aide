@@ -159,6 +159,7 @@ def is_dataset_prepared(competition: Competition, grading_only: bool = False) ->
 
     public = competition.public_dir
     private = competition.private_dir
+    print(public)
 
     if not grading_only:
         if not public.is_dir():

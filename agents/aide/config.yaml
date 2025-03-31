@@ -21,8 +21,9 @@ aide:
   kwargs:
     <<: *kwargs_common
     agent.code.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
-    agent.feedback.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
+    agent.feedback.model: gpt-4o
     agent.steps: *step_count
+    agent.convert_system_to_user: True
   env_vars:
     <<: *env_vars
     # AZURE_OPENAI_AD_TOKEN: ${{ secrets.AZURE_OPENAI_AD_TOKEN }}
@@ -36,8 +37,9 @@ aide/dev:
   kwargs:
     <<: *kwargs_common
     agent.code.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
-    agent.feedback.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
+    agent.feedback.model: gpt-4o
     agent.steps: 8
+    agent.convert_system_to_user: True
   env_vars:
     <<: *env_vars
     # AZURE_OPENAI_AD_TOKEN: ${{ secrets.AZURE_OPENAI_AD_TOKEN }}

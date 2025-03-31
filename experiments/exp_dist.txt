@@ -1,0 +1,5 @@
+jigsaw-toxic-comment-classification-challenge
+new-york-city-taxi-fare-prediction
+denoising-dirty-documents
+detecting-insults-in-social-commentary
+the-icml-2013-whale-challenge-right-whale-redux

@@ -10,7 +10,7 @@ from mlebench.utils import get_logger, get_module_dir, get_repo_dir, import_fn, 
 logger = get_logger(__name__)
 
 
-DEFAULT_DATA_DIR = Path(user_cache_dir()) / "mle-bench" / "data"
+DEFAULT_DATA_DIR = Path("/home/shared/RD-Agent/kaggle/zip_files/")
 
 
 @dataclass(frozen=True)

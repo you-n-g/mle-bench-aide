@@ -54,12 +54,29 @@ aide/o1-preview:
     <<: *kwargs_common
     agent.code.model: o1-preview
     agent.code.temp: 1
-    agent.feedback.model: gpt-4o-2024-08-06
+    agent.feedback.model: gpt-4o
     agent.steps: *step_count
     agent.convert_system_to_user: True
   env_vars:
     <<: *env_vars
     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+
+aide/bo_sing:
+  <<: *defaults
+  kwargs:
+    <<: *kwargs_common
+    agent.code.model: o1-preview
+    agent.code.temp: 1
+    agent.feedback.model: gpt-4o
+    agent.steps: *step_count
+    agent.convert_system_to_user: True
+    agent.search.max_debug_depth: 200
+  env_vars:
+    <<: *env_vars
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+
 
 aide/gpt-4-turbo:
   <<: *defaults

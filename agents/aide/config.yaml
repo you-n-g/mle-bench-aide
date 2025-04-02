@@ -77,6 +77,19 @@ aide/bo_sing:
     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
 
+aide/o1:
+  <<: *defaults
+  kwargs:
+    <<: *kwargs_common
+    agent.code.model: o1
+    agent.code.temp: 1
+    agent.feedback.model: gpt-4o
+    agent.steps: *step_count
+  env_vars:
+    <<: *env_vars
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+
 
 aide/gpt-4-turbo:
   <<: *defaults

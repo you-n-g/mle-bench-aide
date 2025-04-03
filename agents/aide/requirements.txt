@@ -1,3 +1,4 @@
 # git+https://github.com/WinstonLiyt/aideml_plus@v3.1.0
 # git+https://github.com/xuangu-fang/aide_plus_bo@aide_single_trace
-git+https://github.com/WinstonLiyt/aideml_plus@v3.1.1
+# git+https://github.com/WinstonLiyt/aideml_plus@v3.1.1
+git+https://github.com/you-n-g/aideml_plus@v3.1.2

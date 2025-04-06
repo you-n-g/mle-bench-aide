@@ -28,5 +28,8 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 RUN conda run -n ${CONDA_ENV_NAME} pip install -r ${AGENT_DIR}/requirements.txt && \
     conda clean -afy
 
+RUN conda run -n ${CONDA_ENV_NAME} pip install openai==1.70.0 && \
+    conda clean -afy
+
 # put all the agent files in the expected location
 COPY . ${AGENT_DIR}

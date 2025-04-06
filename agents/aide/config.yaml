@@ -103,6 +103,20 @@ aide/o3-mini:
     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
 
+aide/o3-mini-high:
+  <<: *defaults
+  kwargs:
+    <<: *kwargs_common
+    agent.code.model: o3-mini
+    agent.code.temp: 1
+    agent.code.reasoning_effort: high
+    agent.feedback.model: gpt-4o
+    agent.steps: *step_count
+  env_vars:
+    <<: *env_vars
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+
 aide/gpt-4-turbo:
   <<: *defaults
   kwargs:

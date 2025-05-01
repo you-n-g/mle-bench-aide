@@ -2,4 +2,5 @@
 # git+https://github.com/xuangu-fang/aide_plus_bo@aide_single_trace
 # git+https://github.com/WinstonLiyt/aideml_plus@v3.1.1
 # git+https://github.com/you-n-g/aideml_plus@v3.1.2
-git+https://github.com/you-n-g/aideml_plus@v3.1.3  # add reasning efforts
+# git+https://github.com/you-n-g/aideml_plus@v3.1.3  # add reasning efforts
+git+https://github.com/you-n-g/aideml_plus@v3.1.4  # add o4-mini o3 4.5 4.1 models

@@ -161,3 +161,4 @@ grade.sh
 run_project.sh
 launch.json
 node_path.txt
+.aider*
